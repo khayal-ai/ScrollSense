@@ -1,0 +1,62 @@
+Feature,Mean_ABS_SHAP
+cat__Daily_Usage_أكثر من 4 ساعات,0.021857132910438896
+cat__Typical_Usage_Time_طوال اليوم,0.019670331300261332
+cat__Average_Session_Duration_أكثر من ساعة,0.019483695199376764
+cat__Daily_Usage_1-2 ساعة,0.0184630631434539
+cat__Average_Session_Duration_10–30 دقيقة,0.01842262557728586
+cat__Age_18-22,0.01744891709808253
+cat__Occupation_أخرى,0.016892615858946303
+cat__Main_Usage_Reason_الترفيه,0.016582996468493663
+cat__Main_Usage_Reason_متابعة المحتوى,0.01479349976753191
+cat__Daily_App_Opens_أقل من 5 مرات,0.013998354969381795
+cat__Occupation_باحث عن عمل,0.013358182785835233
+cat__Daily_Usage_أقل من 30 دقيقة,0.013357088113163924
+cat__Platforms_Used_Instagram Reels;TikTok;,0.012445578241301348
+cat__Daily_App_Opens_5–10,0.011553194782317205
+cat__Platforms_Used_TikTok;Instagram Reels;YouTube Shorts;Snapchat Spotlight;,0.011461288320405744
+cat__Platforms_Used_TikTok;YouTube Shorts;,0.010917352743025844
+cat__Occupation_موظف,0.01069476968984476
+cat__Age_31-40,0.010563622034069214
+cat__Daily_Usage_2-4 ساعات,0.008791660842920055
+cat__Main_Usage_Reason_التخلص من الملل,0.008574751167651972
+cat__Typical_Usage_Time_أثناء الدراسة أو العمل,0.008404194222924783
+cat__Platforms_Used_TikTok;Instagram Reels;,0.0077535777788152556
+cat__Gender_ذكر,0.00711752906181778
+cat__Average_Session_Duration_30–60 دقيقة,0.00688434727298716
+cat__Daily_App_Opens_أكثر من 20,0.006182045211980233
+cat__Gender_أنثى,0.005979629695133147
+cat__Daily_App_Opens_11–20,0.005908931742646672
+cat__Platforms_Used_TikTok;Instagram Reels;Snapchat Spotlight;,0.005765942168800584
+cat__Age_أقل من 18,0.005717058437974705
+cat__Average_Session_Duration_أقل من 10 دقائق,0.005405671244634992
+cat__Platforms_Used_TikTok;,0.005391695795652576
+cat__Platforms_Used_TikTok;Instagram Reels;YouTube Shorts;,0.005100814807242041
+cat__Platforms_Used_TikTok;YouTube Shorts;Snapchat Spotlight;,0.004625451799544447
+cat__Typical_Usage_Time_عند الاستيقاظ,0.004613551604790587
+cat__Platforms_Used_TikTok;Snapchat Spotlight;,0.004556505657601598
+cat__Age_23-30,0.004555652542521902
+cat__Occupation_طالب,0.0045226439785463705
+cat__Age_أكثر من 40,0.003934604972569326
+cat__Platforms_Used_Instagram Reels;Snapchat Spotlight;,0.002925602755943006
+cat__Daily_Usage_30 - 60 دقيقة,0.002861007928886875
+cat__Platforms_Used_Instagram Reels;Snapchat Spotlight;YouTube Shorts;TikTok;,0.002257900533361753
+cat__Platforms_Used_Instagram Reels;YouTube Shorts;Snapchat Spotlight;TikTok;,0.0021659701289482645
+cat__Platforms_Used_Instagram Reels;YouTube Shorts;,0.002058306704233037
+cat__Typical_Usage_Time_قبل النوم,0.0019800844043154266
+cat__Main_Usage_Reason_التعلم,0.0019593764769629675
+cat__Platforms_Used_YouTube Shorts;TikTok;Instagram Reels;,0.0019274405497122268
+cat__Main_Usage_Reason_الهروب من التوتر,0.0017478923676994493
+cat__Platforms_Used_Snapchat Spotlight;TikTok;,0.0013223893796688116
+cat__Platforms_Used_TikTok;Snapchat Spotlight;YouTube Shorts;,0.0012929169191481513
+cat__Platforms_Used_YouTube Shorts;,0.0009841695393298263
+cat__Platforms_Used_أخرى;,0.0009792302446639883
+cat__Platforms_Used_TikTok;YouTube Shorts;Snapchat Spotlight;Instagram Reels;,0.0009738170808688288
+cat__Gender_nan,0.0008491133285786615
+cat__Platforms_Used_YouTube Shorts;TikTok;,0.000836017649591263
+cat__Platforms_Used_YouTube Shorts;Snapchat Spotlight;,0.0007936304097524203
+cat__Platforms_Used_Snapchat Spotlight;YouTube Shorts;Instagram Reels;TikTok;أخرى;,0.0007376940779927884
+cat__Platforms_Used_TikTok;Snapchat Spotlight;YouTube Shorts;Instagram Reels;أخرى;,0.0006272905384201343
+cat__Platforms_Used_Instagram Reels;TikTok;Snapchat Spotlight;,0.0005497830493623057
+cat__Platforms_Used_Instagram Reels;YouTube Shorts;TikTok;,0.000434419573561535
+cat__Platforms_Used_Snapchat Spotlight;YouTube Shorts;,0.00024268440757294494
+cat__Platforms_Used_TikTok;YouTube Shorts;Instagram Reels;,0.00019127045432036033
