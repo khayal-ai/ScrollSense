@@ -113,7 +113,7 @@ The objective was to identify a better-performing configuration while maintainin
 
 ---
 
-## Explainable AI
+## Explainable AI 
 
 SHAP (SHapley Additive exPlanations) was used to make the model's predictions more interpretable.
 
@@ -133,7 +133,7 @@ The application also uses the trained machine learning model and stored analysis
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python.
 - Pandas.
