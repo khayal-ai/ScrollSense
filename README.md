@@ -1,55 +1,69 @@
 # ScrollSense
 
-Built a machine learning system that analyzes short-video usage behavior and predicts users' usage risk levels.
+A machine learning system that analyzes short-video usage behavior and predicts users' usage risk levels.
 
-The project combines survey-based data collection, exploratory data analysis, machine learning, deep learning, hyperparameter tuning, and Explainable AI (SHAP) in order to investigate patterns associated with short-video usage.
+The project combines survey-based data collection, exploratory data analysis, machine learning, deep learning, hyperparameter tuning, cross-validation, and Explainable AI (SHAP) to investigate patterns associated with short-video usage.
 
 ---
 
 ## Project Overview
 
-Short-form video platforms have become an important part of everyday digital consumption. While they can provide entertainment and useful content, the excessive usage may be associated with difficulties like difficulty controlling usage.
+Short-form video platforms have become an important part of everyday digital consumption. While they can provide entertainment and useful content, excessive usage may be associated with difficulties such as controlling usage, delaying tasks, and disrupting sleep.
 
 ScrollSense was developed to explore whether behavioral and usage-related factors can be used to classify users into different short-video usage risk levels.
 
-The survey was initially shared with family and friends, and additional responses are being collected to expand the dataset and improve future versions of the project.
+The survey was designed in **Arabic** and initially shared with family and friends. Additional responses are still being collected to expand the dataset and improve future versions of the project.
+
+---
+
+## How to Run
+
+To run the ScrollSense Streamlit application locally:
+
+```bash
+git clone https://github.com/khayal-ai/ScrollSense.git
+cd ScrollSense
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The application will open in your browser at the local Streamlit URL.
 
 ---
 
 ## Data Collection
 
-A survey was designed to collect information about participants' short-video usage patterns.
-
+An Arabic-language survey was designed to collect information about participants' short-video usage patterns and behaviors.
 The collected features include:
 
-- Age.
-- Gender.
-- Occupation.
-- Platforms used.
-- Daily short-video usage.
-- Daily application opens.
-- Typical usage time.
-- Main reason for using short-video platforms.
-- Average session duration.
+- Age
+- Gender
+- Occupation
+- Platforms used
+- Daily short-video usage
+- Daily application opens
+- Typical usage time
+- Main reason for using short-video platforms
+- Average session duration
 
 The survey also included behavioral questions related to:
 
-- Difficulty stopping.
-- Watching more than planned.
-- Unintentional application opening.
-- Attempts to reduce usage.
-- Impact on study or work.
-- Sleep delay.
-- Task procrastination.
-- Regret after usage.
+- Difficulty stopping
+- Watching more than planned
+- Unintentional application opening
+- Attempts to reduce usage
+- Impact on study or work
+- Sleep delay
+- Task procrastination
+- Regret after usage
 
 The behavioral responses were converted from a Likert scale into numerical values and combined to calculate an overall risk score.
 
 The risk score was then divided into three categories:
 
--  **Low Risk**
--  **Moderate Risk**
--  **High Risk**
+- **Low Risk**
+- **Moderate Risk**
+- **High Risk**
 
 ---
 
@@ -77,23 +91,27 @@ Visualization was performed using:
 Several classification models were developed and compared:
 
 ### Logistic Regression
+
 Used as a baseline classification model.
 
 ### Random Forest
+
 Used to capture nonlinear relationships between user characteristics and risk levels.
 
 ### XGBoost
+
 Used as a gradient boosting approach for classification.
 
 ### Deep Learning
-A neural network was developed using TensorFlow/Keras.
+
+A neural network was developed using TensorFlow/Keras to explore whether a more complex model could improve classification performance.
 
 The models were evaluated using:
 
-- Accuracy.
-- Macro F1.
-- Weighted .
-- Stratified 5-Fold Cross-Validation.
+- Accuracy
+- Macro F1
+- Weighted F1
+- Stratified 5-Fold Cross-Validation
 
 Because the dataset is relatively small and the classes are not perfectly balanced, Macro F1 was also considered when comparing model performance.
 
@@ -105,15 +123,15 @@ Grid Search with 5-fold cross-validation was used to tune the XGBoost model.
 
 The search explored different combinations of:
 
-- Learning rate.
-- Maximum tree depth.
-- Number of estimators.
+- Learning rate
+- Maximum tree depth
+- Number of estimators
 
 The objective was to identify a better-performing configuration while maintaining a proper separation between training and test data.
 
 ---
 
-## Explainable AI 
+## Explainable AI
 
 SHAP (SHapley Additive exPlanations) was used to make the model's predictions more interpretable.
 
@@ -129,23 +147,7 @@ A Streamlit application was developed to provide an interactive interface for th
 
 The application allows users to enter their short-video usage information and receive a predicted risk level.
 
-The application also uses the trained machine learning model and stored analysis results.
-
----
-
-## Technologies Used
-
-- Python.
-- Pandas.
-- NumPy.
-- Matplotlib.
-- Seaborn.
-- Scikit-learn.
-- XGBoost.
-- TensorFlow / Keras.
-- SHAP.
-- Streamlit.
-- Joblib.
+The application uses the trained Random Forest model and the project's analysis results.
 
 ---
 
@@ -153,11 +155,29 @@ The application also uses the trained machine learning model and stored analysis
 
 Multiple machine learning approaches were evaluated, including Logistic Regression, Random Forest, XGBoost, and a Deep Learning neural network.
 
-The deep learning model was included to explore a more complex modeling approach, but it did not achieve the best performance on the available dataset. Given the relatively small number of survey responses, traditional machine learning approaches were more suitable for the current version of the project.
+The deep learning model was included to explore a more complex modeling approach, but it did not outperform the traditional machine learning models on the available dataset.
 
-Random Forest was selected as the final model based on its overall performance across the evaluation metrics.
+Given the relatively small number of survey responses, traditional machine learning approaches were more suitable for the current version of the project.
+
+**Random Forest was selected as the final model** based on its overall performance across the evaluation metrics.
 
 As more survey responses are collected, the dataset can be expanded and the deep learning approach can be reevaluated in future iterations.
+
+---
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- XGBoost
+- TensorFlow / Keras
+- SHAP
+- Streamlit
+- Joblib
 
 ---
 
@@ -169,7 +189,9 @@ ScrollSense/
 ├── app.py
 ├── main.py
 ├── survey.csv
+├── requirements.txt
 │
+├── cleaned_survey_data.csv
 ├── cv_results.csv
 ├── deep_learning_cv_results.csv
 ├── final_model_results.csv
@@ -179,3 +201,4 @@ ScrollSense/
 │
 ├── .gitignore
 └── README.md
+
